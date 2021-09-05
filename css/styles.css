@@ -109,8 +109,9 @@ header {
 .box-icon {
     display: block;
     margin: 1rem auto;
-    width: 6rem;
-    height: 6rem;
+    padding: 1.5rem 1rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     border: 2px solid #fff;
 }
@@ -257,6 +258,9 @@ ol, .grid-menu {
     padding: .5rem 0;
     color: #009988;
 }
+.grid-list-1 .ic {
+    margin-right: .6rem;
+}
 .grid-list {
     padding: .5rem 0;
 }
@@ -303,4 +307,30 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0 1rem;
+}
+.footer-paragraph {
+    color: #009988;
+}
+@keyframes icon-color {
+    0% {
+        background-color: #303030;
+        color: #a39191;
+    }
+    100% {
+        color: #fff;
+        background-color: #e231bb;
+    }
+    
+}
+.icons-list {
+    padding: .5rem;
+    background-color: #303030;
+    color: #a39191;
+    font-size: 25px;
+    margin: 0 .2rem;
+}
+.icons-list:hover{
+    background-color: #e231bb;
+    color: #fff;
+    animation: icon-color 0.5s 1 linear;
 }
